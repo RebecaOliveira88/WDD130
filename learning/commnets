@@ -1,0 +1,13 @@
+HTML Comment Example
+<!-- This is a comment -->
+
+CSS Comment Example
+/* This is a comment */
+
+
+Use ctrl+/ (⌘+/) to comment out the line of
+code where you cursor is currently located 
+or lines of code that you have selected.
+
+Pressing ctrl+/ again will toggle the commented 
+out line(s) of code.
