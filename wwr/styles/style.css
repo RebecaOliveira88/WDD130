@@ -1,4 +1,5 @@
 
+
 body {
     font-family:"Antic Slab", serif, "Maven Pro", sans-serif;
     max-width: 1600px;
@@ -48,6 +49,76 @@ body {
     color: black;
     padding: 1em;
   }
+
+  nav {
+    background-color: #368CFC;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav  {
+    list-style-type: none;
+    display: flex;
+  }
+  nav a {
+    padding:35px;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  nav a:link, nav a:visited {
+    color: white;
+  }
+  nav a:hover {
+    color:white;
+    background-color:#FFE4C2;
+  }
+
+
+
+footer {
+    margin-top: 25px;
+}
+
+footer {
+  background-color:#368CFC;
+  color: white;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer a {
+  color:white;
+  text-decoration: none;
+}
+footer a:hover{
+  color:white;
+}
+footer p {
+  font-size: 1.2em;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  #hero, .home-grid {
+      display: block;
+      height: auto;
+  }
+  nav, footer {
+      flex-direction: column;
+  }
+  nav a {
+      display: block;
+      padding: 15px;
+  }
+
 
   #logo_link {
     padding-top: 5px;
@@ -150,33 +221,7 @@ body {
     background-color:#368CFC;
     color:white;
   }
-  nav {
-    background-color: #368CFC;
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
-    display: flex;
-    justify-content: space-around;
-  }
-  nav  {
-    list-style-type: none;
-    display: flex;
-  }
-  nav a {
-    padding:35px;
-    min-width: 120px;
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
-  nav a:link, nav a:visited {
-    color: white;
-  }
-  nav a:hover {
-    color:white;
-    background-color:#FFE4C2;
-  }
+  
   .sitemap {
     display: grid;
     justify-content: center;
@@ -267,40 +312,7 @@ body {
     line-height: 1.5em;
     padding-bottom: 15px;
   }
-  footer {
-    background-color:#368CFC;
-    color: white;
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  footer a {
-    color:white;
-    text-decoration: none;
-  }
-  footer a:hover{
-    color:white;
-  }
-  footer p {
-    font-size: 1.2em;
-  }
-  footer p a:hover {
-    text-decoration: underline;
-  }
-  @media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
+  
     #hero {
         margin-top: 0;
     }
@@ -326,7 +338,5 @@ body {
         display: block;
         margin: 0 auto;
     }
-    footer {
-        margin-top: 25px;
-    }
-}
+    
+  }
