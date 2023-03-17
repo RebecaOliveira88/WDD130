@@ -26,9 +26,6 @@ body {
     max-width: 700px;
   }
 
-  h1 {
-
-  }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Rock Salt', cursive;
@@ -52,6 +49,8 @@ body {
     display: grid;
     grid-template-columns: 150px auto;
   }
+
+
   header > h1, header > h2 {
     color: white;
   }
@@ -63,9 +62,9 @@ body {
 
   nav {
     background-color: #368CFC;
-    line-height: 3em;
+    line-height: 3rem;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
