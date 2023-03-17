@@ -1,13 +1,19 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
     font-family:"Antic Slab", serif, "Maven Pro", sans-serif;
     max-width: 1600px;
     margin: 0 auto;
     padding: 0;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     background-color: #ecf0f5;
+    box-sizing: border-box;
+    display: block;
   }
   #background {
     height: 725px;
@@ -19,6 +25,11 @@ body {
     margin: 0 auto;
     max-width: 700px;
   }
+
+  h1 {
+
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Rock Salt', cursive;
     color: #368CFC;
@@ -56,23 +67,32 @@ body {
     text-align: center;
     font-size: 1.2em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: center;
   }
+
   nav  {
     list-style-type: none;
     display: flex;
   }
+
   nav a {
-    padding:35px;
+    padding: 35px;
     min-width: 120px;
     text-decoration: none;
-    padding: 10px;
+    padding: 0.5rem;
     text-align: center;
     color: white;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
+
   nav a:link, nav a:visited {
     color: white;
   }
+
   nav a:hover {
     color:white;
     background-color:#FFE4C2;
@@ -118,6 +138,11 @@ footer p a:hover {
       display: block;
       padding: 15px;
   }
+
+header, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
 
 
   #logo_link {
