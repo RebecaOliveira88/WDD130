@@ -8,32 +8,27 @@
     <link rel="stylesheet" href="styles/quiz.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav> 
-    </header>
+   <form>
+    <label for="q1">1. How can CSS be integrated into an HTML page?</label>
+    <input type="text" id="q1" name="q1"><br><br>
 
-    <main>
-        <h1>How can CSS be integrated into an HTML page?</h1>
-        <h1>What is the difference between a class and an ID?</h1>
-        <h1>How is the border-box different from the content box?</h1>
-        <h1>What is the grid system?</h1>
-    </main>
+    <label for="q2">2. What is the difference between a class and an ID?</label><br>
+      <textarea id="q2" name="q2" rows="4" cols="50"></textarea><br><br>
+
+    <label for="q3">3. Which of the following is not a valid value for the display property in CSS?</label><br>
+    <select id="q3" name="q3">
+      <option value="" selected disabled>Choose One ...</option>
+      <option value="block">block</option>
+      <option value="inline">inline</option>
+      <option value="hide">hide</option>
+    </select><br><br>
+
+    <label for="q4">4. What is the grid system?</label><br>
+      <input type="number" id="q4" name="q4"><br><br>
+
+    <button type="submit">Submit Quiz</button>
+
+   </form>
 </body>
 </html>
 
-6. How can CSS be integrated into an HTML page?
-There are three ways of integrating CSS into HTML: using style tags in the head section, using inline-styling, writing CSS in a separate file, and linking into the HTML page by the link tag. 
-
-10. What is the difference between a class and an ID?
-Ans. Class is a way of using HTML elements for styling. They are not unique and have multiple elements. Whereas ID is unique and it can be assigned to a single element. 
-
-25. How is the border-box different from the content box?
-Border-box consists of properties such as content, padding, and the border with respect to height and width. However, Content-box is a default value property used for the box-sizing as well as it helps to add border and padding to give proper height and width to the box without having a border and padding properties.
-
-31. What is the grid system?
-The CSS grid system is a type of powerful layout of 2 dimensional systems with respect to columns and rows

@@ -1,0 +1,22 @@
+form{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"], textarea, select, input[type="number"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #368CFC;
+    color: black;
+}

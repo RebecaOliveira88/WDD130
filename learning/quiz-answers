@@ -1,0 +1,12 @@
+1. How can CSS be integrated into an HTML page?
+There are three ways of integrating CSS into HTML: using style tags in the head section, using inline-styling, writing CSS in a separate file, and linking into the HTML page by the link tag. 
+
+2. What is the difference between a class and an ID?
+Ans. Class is a way of using HTML elements for styling. They are not unique and have multiple elements. Whereas ID is unique and it can be assigned to a single element. 
+
+3. How is the border-box different from the content box?
+Border-box consists of properties such as content, padding, and the border with respect to height and width. However, Content-box is a default value property used for the box-sizing as well as it helps to add border and padding to give proper height and width to the box without having a border and padding properties.
+
+
+4. What is the grid system?
+The CSS grid system is a type of powerful layout of 2 dimensional systems with respect to columns and rows
