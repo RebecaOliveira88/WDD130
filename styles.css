@@ -11,10 +11,11 @@ body {
 
 nav {
     background-color: steelblue;
-    padding: 1rem;
+    padding: 3rem;
+    line-height: 3em;
+    text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
@@ -35,28 +36,40 @@ h1 {
     color: steelblue;
     margin-bottom: 1rem;
     border-bottom: 1px solid steelblue;
-  
-
 }
 
 p {
     padding: 10px;
-    margin: 1rem;
+    margin: 1px;
 }
 
-
-
-main img {
+main {
     /* you most likely will have other declarations here */
-    float: right;
-    width: 180px;
+    float: inline-end;
+    width: 650px;
     height: auto;
-    border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
-    margin: 0 0 1rem 1rem;
-
+    display: flex;
+    margin: 1rem;
   }
+
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.picture {
+  float: left;
+  margin-left: 20px;
+}
+
+.picture img {
+  width: 200px;
+}
+
+.paragraph {
+  width: calc(100% - 220px);
+}
 
   aside img { 
     width: 280px;
@@ -70,7 +83,7 @@ main img {
   }
 
   footer {
-    margin-top: 1rem;
+    margin-top: 5rem;
     border-top: 1px solid #000;
     text-align: center;
   }
@@ -102,10 +115,6 @@ aside {
   grid-row: 1;
 }
 
-main{
-  grid-column: 2;
-  margin: 1rem;
-  
-}
+
   
   
