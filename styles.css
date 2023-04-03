@@ -27,7 +27,7 @@ nav a {
 
 
 header, .grid footer {
-  max-width: 840px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -51,6 +51,7 @@ main {
     padding: 2px;
     display: flex;
     margin: 1rem;
+    flex-direction: column;
   }
 
 .container{
@@ -59,7 +60,6 @@ main {
 }
 
 .picture {
-  float: left;
   margin-left: 20px;
 }
 
@@ -69,6 +69,7 @@ main {
 
 .paragraph {
   width: calc(100% - 220px);
+
 }
 
   aside img { 
@@ -113,6 +114,8 @@ aside {
   position: relative;
   grid-column: 2;
   grid-row: 1;
+  display: flex;
+  align-self: center;
 }
 
 
