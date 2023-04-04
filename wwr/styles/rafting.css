@@ -106,31 +106,65 @@ main {
   width: 1200px;
 }
  
-.background {
+.hero.background {
   padding: 40px;
   align-items: center;
-  width: 500px;
+  width: 100%;
+}
+
+
+.hero{
+  position: relative;
+  display: inline-block;
+}
+
+.hero img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay-background .hero-top{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay-background h1 {
+  margin-top: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
 }
 
 .hero-top {
   display: flex;
   justify-content: center;
-
 }
 
   section {
     text-align: center;
+    width: 100%;
   }
 
   .adventure{
     display: flex;
     justify-content: space-around;
-    width: 1100px;
-    text-align: center;
+    width: 100%;
   }
 
   figure img{
-    width: 150px;
+    width: 100px;
   }
 
   figcaption{
@@ -140,9 +174,17 @@ main {
   }
 
 
-  img{
-    max-width: 220px;
-    max-height: 150px;
+  .about img{
+    width: 220px;
+    height: auto;
+
+  }
+
+.about .hero article img{
+  width: 220px;
+}
+  .about .hero img {
+    width: 100%;
   }
 
   form{
@@ -197,6 +239,10 @@ button {
   font-weight: bold;
 }
 
+.book-trip img{
+  width: 100%;
+}
+
 .book {
   background-color:#368CFC;
   color: white;
@@ -219,50 +265,30 @@ button {
 .trips {
   display: flex;
   flex-wrap: wrap;
-  
-}
-
-.trip {
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.trip figure {
-  margin-bottom: 10px;
+  justify-content: space-around;
 }
 
 .trip a.book {
-  position: absolute;
   bottom: 0;
-  left: 40%;
   transform: translateX(-50%);
   background-color: #368CFC;
   color: white;
   text-decoration: none;
-  padding: 15px 30px;
   border-radius: 5px;
-
 }
 
 .trips figcaption{
   font-style: italic;
   margin-top: 5px;
+  margin-bottom: 30px;
   text-align: center;  
 }
 
-.trips figure:hover figcaption{
-  opacity: 1;
-}
-
 .trips img {
-  display: block;
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
-  padding: 1rem;
+ 
 }
 
 
