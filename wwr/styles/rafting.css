@@ -187,7 +187,7 @@ main {
     width: 100%;
   }
 
-  form{
+form{
     padding: 100px;
     display: flex;
     flex-direction: column;
@@ -289,6 +289,20 @@ button {
   height: auto;
   margin-bottom: 10px;
  
+}
+
+.padding {
+  padding: 150px;
+}
+
+table td {
+    border: 2px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #368CFC;
+    color: #fff;
 }
 
 
