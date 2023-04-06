@@ -1,7 +1,5 @@
 /* Google Fonts link*/
 @import url('https://fonts.googleapis.com/css2?family=Rock+salt&family=antic+slab:ital,wght@0,400;0,700;1,400&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Maven+Pro:wght@700&display=swap');
@@ -22,7 +20,7 @@
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: #368CFC; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #368CFC  ;
+  --paragraph-background-color: #368CFC ;
   --nav-link-color: #368CFC;
   --nav-background-color: #FFE4C2;
   --nav-hover-link-color: white;
@@ -159,12 +157,20 @@ main {
 
   .adventure{
     display: flex;
+    align-items: center;
+    width: 1200px;
     justify-content: space-around;
-    width: 100%;
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
   }
 
   figure img{
-    width: 100px;
+    width: 90px;
+    margin: 0;
+    padding: 0;
   }
 
   figcaption{
@@ -309,44 +315,26 @@ tfoot {
 
 /*home page*/
 
-
-
 .home-title {
-  color: #FF8547;
-  font-family: 'Rock Salt', cursive;
-  font-size: 2em;
-  margin-top: 10px;
-  display: flex;
-  position: relative;
-  align-items: center;
+  text-align: center;
 }
 
-
 #hero {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
   margin-top: 0px; 
   align-items: center;
 }
 
 #hero-box {
-  grid-column: 1/4;
-  grid-row: 1/3;
-  z-index: -1;
+  text-align: center;
 }
 
-#hero-msg h4 {
+#hero-msg {
   color: rgb(62, 61, 61);
-  grid-column: 2;
-  grid-row: 1;
   margin-top: 50px; 
 }
 
-.hero-img {
-  display: flex;
+#hero-img {
   width: 100%;
-  align-items: center;
-  max-width: 100%;
   height: auto;
 }
 
@@ -365,8 +353,6 @@ tfoot {
   padding: 15px 30px;
   margin-top: 50px;
   border-radius: 5px;
-
-  
 }
 
 .book:hover {
@@ -511,25 +497,13 @@ p.colored {
       margin-top: 0;
   }
   #hero-msg h1{
-      margin-top: 0;
-      margin-left: 500px;
-      display: flex;
-      flex-direction: column;
+      text-align: center;
   }
 
-  #hero-msg .button-box{
-    display: flex;
-    flex-direction: column;
-    margin-left: 500px;
+  #hero-msg {
+    text-align: center;
   }
    
-.h4-text {
-      display: flex;
-      align-items: center;
-      flex-direction: column-reverse;
-      margin-left: 500px;
-      
-  }
   .home-title {
       font-size: 25px;
       color: #6f7364;
@@ -554,11 +528,23 @@ p.colored {
   }
 
 .home-grid {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
     height: auto;
-    padding: 1rem;
+    padding: 5rem;
 }
 
+.rivers-card, .camping-card, .rapids-card {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter{
+  background-color: #d9c2a3;
+  align-items: center;
+}
 
 
 footer {
@@ -588,18 +574,3 @@ footer p {
 footer p a:hover {
   text-decoration: underline;
 }
-
-@media screen and (max-width: 900px)
-{ #hero, .home-grid {
-    display: block;
-    height: auto;
-      }}
-    
-
-  nav, footer {
-      flex-direction: row;
-  }
-  nav a {
-      display: block;
-      padding: 1px;
-  }
